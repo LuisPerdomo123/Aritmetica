@@ -29,4 +29,12 @@ public class Aritmetica {
         return a + b;
     }
     
+    public int sumarConArgumentos(int arg1, int arg2){//Recepcion de informacion es argumentos
+    
+        a = arg1;
+        b = arg2;
+        //return a + b;
+        return sumarConRetorno();//Se esta reutilizando el metodo prevuamewnte creado
+    }
+    
 }
