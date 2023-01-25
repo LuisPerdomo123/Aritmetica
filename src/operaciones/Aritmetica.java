@@ -22,4 +22,11 @@ public class Aritmetica {
         System.out.println("resultado = " + resultado);
     }
     
+    public int sumarConRetorno(){
+    
+//        int resultado = a + b;
+//        return resultado;
+        return a + b;
+    }
+    
 }
