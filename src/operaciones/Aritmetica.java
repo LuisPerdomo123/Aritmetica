@@ -26,15 +26,17 @@ public class Aritmetica {
     
 //        int resultado = a + b;
 //        return resultado;
-        return a + b;
+        return this.a + this.b;//Se esta trabajando con atributos y no con argumentos
     }
     
-    public int sumarConArgumentos(int arg1, int arg2){//Recepcion de informacion es argumentos
+    public int sumarConArgumentos(int a, int b){//Recepcion de informacion es argumentos
     
-        a = arg1;
-        b = arg2;
+        this.a = a;//atributo de nuestra clase y no una variable local
+        //El argumento a se asigna al atributo this.a
+        this.b = b;//Los argumentos del metodo estan en negro y los atributos en morado
         //return a + b;
-        return sumarConRetorno();//Se esta reutilizando el metodo prevuamewnte creado
+        return this.sumarConRetorno();//Se esta reutilizando el metodo prevuamewnte creado
+        
     }
     
 }
