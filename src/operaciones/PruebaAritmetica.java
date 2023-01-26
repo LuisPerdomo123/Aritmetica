@@ -14,13 +14,13 @@ public class PruebaAritmetica {
 
         //Manejo de contructores y sobrecarga
         //Alcance de variables
-        //Variables locales
+        //Variables locales y estan siendo almacenadas en la memoria stack
         var a = 10;//Var solo puede utilizarse para definir variables locales
         var b = 2;
 
         miMetodo();//El metodo main solo puede llamar a otros metodos estaticos
 
-        Aritmetica aritmetica1 = new Aritmetica();
+        Aritmetica aritmetica1 = new Aritmetica();//Se alamacena en la memoeria heap
         System.out.println("aritmetica1 a: " + aritmetica1.a);//Impresion de los valores por default
         System.out.println("aritmetica1 b: " + aritmetica1.b);
 
@@ -40,6 +40,8 @@ public class PruebaAritmetica {
         resultado = aritmetica1.sumarConArgumentos(5, 8);//Envio de informacion se le llama parametro
         System.out.println("resultado usuando argumentos = " + resultado);
 
+//        aritmetica1 = null; //No es usual destruir el objeto, dado que al finalizar el metodo finaliza el objeto de la memoria heap
+//        System.gc();//Administrador y colector de basura. No es comun utilizar esta linea de codigo
     }
 
     public static void miMetodo() {
