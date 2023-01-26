@@ -13,6 +13,15 @@ public class Aritmetica {
     
     int a;//El valor primitivo por defoult es 0
     int b;
+    /*
+    El constructor permite asignar diferentes valores 
+    */
+    //Constructor vacio
+    
+    public Aritmetica(){
+    
+        System.out.println("Ejecutando constructor");
+    }
     
     //Metodos
     
@@ -38,5 +47,7 @@ public class Aritmetica {
         return this.sumarConRetorno();//Se esta reutilizando el metodo prevuamewnte creado
         
     }
+    
+    
     
 }
