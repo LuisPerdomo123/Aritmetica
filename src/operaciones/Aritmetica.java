@@ -18,9 +18,17 @@ public class Aritmetica {
     */
     //Constructor vacio
     
-    public Aritmetica(){
+    public Aritmetica(){//Se esta omitiendo argumentos (constructor vacio)
     
         System.out.println("Ejecutando constructor");
+    }
+    
+    public Aritmetica(int a, int b){//Tiene presente argumentos. Sobrecarga de constructor
+
+        this.a = a;
+        this.b = b;
+        System.out.println("Ejecutando constructor con argumento");
+                
     }
     
     //Metodos
